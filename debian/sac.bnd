@@ -1,0 +1,6 @@
+Bundle-Name: Simple API for CSS
+Bundle-SymbolicName: org.w3c.css.sac
+Bundle-Version: 1.3.0
+Bundle-Vendor: Debian.org
+Import-Package: *
+Export-Package: *

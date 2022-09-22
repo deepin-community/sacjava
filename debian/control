@@ -1,0 +1,26 @@
+Source: sacjava
+Section: java
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders:
+ Rene Engelhard <rene@debian.org>,
+ Jakub Adam <jakub.adam@ktknet.cz>
+Build-Depends:
+ bnd (>= 2.1.0),
+ debhelper-compat (= 13),
+ default-jdk,
+ maven-debian-helper
+Standards-Version: 4.5.1
+Vcs-Git: https://salsa.debian.org/java-team/sacjava.git
+Vcs-Browser: https://salsa.debian.org/java-team/sacjava
+Homepage: https://www.w3.org/Style/CSS/SAC/
+
+Package: libsac-java
+Architecture: all
+Depends: ${misc:Depends}
+Description: Simple API for CSS Java library
+ SAC is a standard interface for CSS parser and supposed to work
+ with CSS1, CSS2, CSS3 (currently under development) and other CSS derived
+ languages.
+ .
+ This package contains the SAC Java library.

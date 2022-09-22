@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@ --builsystem=maven
+
+override_dh_auto_configure:
+	cp debian/pom.xml .
+	dh_auto_configure
+
+override_dh_auto_build:
+	dh_auto_build
+	bnd wrap --properties debian/sac.bnd --output target/sac-1.3.jar.tmp target/sac-1.3.jar
+	mv target/sac-1.3.jar.tmp target/sac-1.3.jar
